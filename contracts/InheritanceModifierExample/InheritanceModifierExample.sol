@@ -4,6 +4,8 @@ import "./Owned.sol";
 
 /*
     Solidity에서는 다중 상속이 가능하다.
+    다중 상속 간 똑같은 함수가 있다면, 마지막 스마트 컨트랙트의 것을 사용한다.
+    super 키워드가 존재한다.
 */
 contract InheritanceModifierExample is Owned {
 
