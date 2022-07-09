@@ -1,7 +1,16 @@
 pragma solidity ^0.5.11;
 
 contract FunctionExample {
-    
+    /*
+        Function의 범위는 4가지이다.
+        1. Public - 전부 공개
+        2. Private - 해당 컨트랙트만 사용 가능
+        3. External - 외부에서 호출 가능하지만, 해당 컨트랙트 내부에서 호출은 불가능
+        4. Internal - 해당 컨트랙트 및 상호작용하는 컨트랙트
+
+        Writing은 네트워크에 존재하는 모든 분산 노드에 블록체인 데이터가 존재해야 하기 때문에 가스를 요구한다.
+        Reading은 네트워크에 존재하는 로컬 노드만으로도 읽을 수 있어 사실상 무료라고 한다.
+    */
     mapping(address => uint) public balanceReceived;
 
     address payable owner;
@@ -46,9 +55,19 @@ contract FunctionExample {
     
     /*
         Fallback 함수, 함수 사용 없이 스마트 컨트랙트로 돈을 보낼 수 있다.
-        기술적인 해결책이다. 근데 왜 안 보일까..?
+        항상 external이어야 한다.
+        기술적인 해결책이다. Deploy 이후 Low level interations을 통해 사용할 수 있다.
     */
     function () external payable {
         receiveMoney();
     }
+
+    /* 
+        Solidity 0.6? 0.8? 업데이트 이후, Fallback 함수가 분리되었다.
+        receive는 Ether를 받고 스마트 컨트랙트와 상호 작용한다.
+        fallback은 Ether를 받지 않고 스마트 컨트랙트와 상호 작용한다.
+    */
+    // receive() external payable {
+    //     receiveMoney();
+    // }
 }
