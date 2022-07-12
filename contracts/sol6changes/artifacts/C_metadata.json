@@ -1,0 +1,61 @@
+{
+	"compiler": {
+		"version": "0.6.0+commit.26b70077"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "_myString",
+						"type": "string"
+					}
+				],
+				"name": "MyEvent",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "funA",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/sol6changes/Override.sol": "C"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/sol6changes/Override.sol": {
+			"keccak256": "0x9b3b67b3cf8b79556df9991c8f231aa7bedfa9c7d92908be3efcafaeb4c8cb5b",
+			"urls": [
+				"bzz-raw://b2a6b74c1ac7edf82aabd99a79de501f0a31e3b4b649b58a88a4fc8f9047b710",
+				"dweb:/ipfs/QmaCdFgfCZZqkWZojvYPAnA5meD5CgKk9us1JsBPjj8YuP"
+			]
+		}
+	},
+	"version": 1
+}

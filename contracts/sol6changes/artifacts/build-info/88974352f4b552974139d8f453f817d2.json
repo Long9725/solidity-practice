@@ -1,0 +1,69 @@
+{
+	"id": "88974352f4b552974139d8f453f817d2",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.5.15",
+	"solcLongVersion": "0.5.15+commit.6a57276f",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"contracts/sol6changes/Override.sol": {
+				"content": "/*\n    works in 0.5.15\n*/\n\n// pragma solidity 0.5.15;\n\n// contract A {\n//     event MyEvent(string _myString);\n//     function funA() public {\n//         emit MyEvent(\"from A\");\n//     }\n// }\n\n// contract B {\n//     function funA() public {\n//         // does nothing\n//     }\n// }\n\n// /*\n//     1. contract C is A, B는 A 재정의 이후 B를 재정의 하므로, super.funA()는 아무것도 하지 않아야 한다.\n//     2. contract C is B, A는 B 재정의 이후 A를 재정의 하므로, super.funA()는 from A를 출력한다.\n// */\n// contract C is A, B {\n//     function funA() public {\n//         emit MyEvent(\"from B\");\n//         super.funA();\n//     }\n// }\n\n/*\n    works in 0.6.0\n*/\n\n// pragma solidity 0.6.0;\n\n// contract A {\n//     event MyEvent(string _myString);\n//     function funA() public virtual {\n//         emit MyEvent(\"from A\");\n//     }\n// }\n\n// contract B {\n//     function funA() public virtual {\n//         // does nothing\n//     }\n// }\n\n// contract C is B, A {\n//     function funA() public override(A,B) {\n//         emit MyEvent(\"from B\");\n//         super.funA();\n//     }\n// }"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"errors": [
+			{
+				"component": "general",
+				"formattedMessage": "contracts/sol6changes/Override.sol:55:5: Warning: Source file does not specify required compiler version! Consider adding \"pragma solidity ^0.5.15;\"\n// }\n    ^\n",
+				"message": "Source file does not specify required compiler version! Consider adding \"pragma solidity ^0.5.15;\"",
+				"severity": "warning",
+				"sourceLocation": {
+					"end": 1114,
+					"file": "contracts/sol6changes/Override.sol",
+					"start": 1114
+				},
+				"type": "Warning"
+			}
+		],
+		"sources": {
+			"contracts/sol6changes/Override.sol": {
+				"ast": {
+					"absolutePath": "contracts/sol6changes/Override.sol",
+					"exportedSymbols": {},
+					"id": 1,
+					"nodeType": "SourceUnit",
+					"nodes": [],
+					"src": "1114:0:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}

@@ -1,0 +1,68 @@
+{
+	"compiler": {
+		"version": "0.6.0+commit.26b70077"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "_addr",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "SomeEvent",
+				"type": "event"
+			},
+			{
+				"stateMutability": "nonpayable",
+				"type": "fallback"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/sol6changes/FallbackFunction.sol": "A"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/sol6changes/FallbackFunction.sol": {
+			"keccak256": "0xcf6d110d660c5ccfe0cf6440b319364123abeb6c593e0ca5579c3f4cb7ef0bd9",
+			"urls": [
+				"bzz-raw://28205387e9cc336a5ebf13419f428636b8483a12e531073308ffe2d8c8dc245f",
+				"dweb:/ipfs/QmT6eAmLBDxGY58xGdFEyRSh3JS67wDNCs1D2a5Xs1ugT3"
+			]
+		}
+	},
+	"version": 1
+}

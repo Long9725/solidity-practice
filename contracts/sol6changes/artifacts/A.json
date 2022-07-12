@@ -1,0 +1,86 @@
+{
+	"deploy": {
+		"VM:-": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"main:1": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"ropsten:3": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"rinkeby:4": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"kovan:42": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"görli:5": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"Custom": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		}
+	},
+	"data": {
+		"bytecode": {
+			"linkReferences": {},
+			"object": "608060405234801561001057600080fd5b5060b98061001f6000396000f3fe6080604052366075577fdde371250dcd21c331edbb965b9163f4898566e8c60e28868533281edf66ab033334604051808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018281526020019250505060405180910390a1005b348015608057600080fd5b5000fea26469706673582212209dd15c4eed5999f69a3ce3b2d63965167fca772d0e2ea751a698889c6ced68ce64736f6c63430006000033",
+			"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH2 0x10 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0xB9 DUP1 PUSH2 0x1F PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE CALLDATASIZE PUSH1 0x75 JUMPI PUSH32 0xDDE371250DCD21C331EDBB965B9163F4898566E8C60E28868533281EDF66AB03 CALLER CALLVALUE PUSH1 0x40 MLOAD DUP1 DUP4 PUSH20 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF AND PUSH20 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF AND DUP2 MSTORE PUSH1 0x20 ADD DUP3 DUP2 MSTORE PUSH1 0x20 ADD SWAP3 POP POP POP PUSH1 0x40 MLOAD DUP1 SWAP2 SUB SWAP1 LOG1 STOP JUMPDEST CALLVALUE DUP1 ISZERO PUSH1 0x80 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP STOP INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 SWAP14 0xD1 0x5C 0x4E 0xED MSIZE SWAP10 0xF6 SWAP11 EXTCODECOPY 0xE3 0xB2 0xD6 CODECOPY PUSH6 0x167FCA772D0E 0x2E 0xA7 MLOAD 0xA6 SWAP9 DUP9 SWAP13 PUSH13 0xED68CE64736F6C634300060000 CALLER ",
+			"sourceMap": "50:263:0:-:0;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;50:263:0;;;;;;;"
+		},
+		"deployedBytecode": {
+			"linkReferences": {},
+			"object": "6080604052366075577fdde371250dcd21c331edbb965b9163f4898566e8c60e28868533281edf66ab033334604051808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018281526020019250505060405180910390a1005b348015608057600080fd5b5000fea26469706673582212209dd15c4eed5999f69a3ce3b2d63965167fca772d0e2ea751a698889c6ced68ce64736f6c63430006000033",
+			"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLDATASIZE PUSH1 0x75 JUMPI PUSH32 0xDDE371250DCD21C331EDBB965B9163F4898566E8C60E28868533281EDF66AB03 CALLER CALLVALUE PUSH1 0x40 MLOAD DUP1 DUP4 PUSH20 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF AND PUSH20 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF AND DUP2 MSTORE PUSH1 0x20 ADD DUP3 DUP2 MSTORE PUSH1 0x20 ADD SWAP3 POP POP POP PUSH1 0x40 MLOAD DUP1 SWAP2 SUB SWAP1 LOG1 STOP JUMPDEST CALLVALUE DUP1 ISZERO PUSH1 0x80 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP STOP INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 SWAP14 0xD1 0x5C 0x4E 0xED MSIZE SWAP10 0xF6 SWAP11 EXTCODECOPY 0xE3 0xB2 0xD6 CODECOPY PUSH6 0x167FCA772D0E 0x2E 0xA7 MLOAD 0xA6 SWAP9 DUP9 SWAP13 PUSH13 0xED68CE64736F6C634300060000 CALLER ",
+			"sourceMap": "50:263:0:-:0;;;;;;160:32;170:10;182:9;160:32;;;;;;;;;;;;;;;;;;;;;;;;;;;;50:263;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;50:263:0;"
+		},
+		"gasEstimates": {
+			"creation": {
+				"codeDepositCost": "37000",
+				"executionCost": "87",
+				"totalCost": "37087"
+			},
+			"external": {
+				"": "1389"
+			}
+		},
+		"methodIdentifiers": {}
+	},
+	"abi": [
+		{
+			"anonymous": false,
+			"inputs": [
+				{
+					"indexed": false,
+					"internalType": "address",
+					"name": "_addr",
+					"type": "address"
+				},
+				{
+					"indexed": false,
+					"internalType": "uint256",
+					"name": "_amount",
+					"type": "uint256"
+				}
+			],
+			"name": "SomeEvent",
+			"type": "event"
+		},
+		{
+			"stateMutability": "nonpayable",
+			"type": "fallback"
+		},
+		{
+			"stateMutability": "payable",
+			"type": "receive"
+		}
+	]
+}

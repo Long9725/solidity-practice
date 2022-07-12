@@ -1,0 +1,80 @@
+{
+	"compiler": {
+		"version": "0.6.0+commit.26b70077"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_num",
+						"type": "uint256"
+					}
+				],
+				"name": "add",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "myUintArray",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "removeElement",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/sol6changes/ArrayLength.sol": "MyContract"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/sol6changes/ArrayLength.sol": {
+			"keccak256": "0xe3f840e7ce98dad97e9f0bc8a5b1331cd0068af4a8ada95f76cc3d7e60364aad",
+			"urls": [
+				"bzz-raw://2a43a41a30ec74e29d0674e1050e7d482c245498ea583097db195b727e35fe7a",
+				"dweb:/ipfs/QmbWpdA6G2yq8CpmguUYkqSLBNfFN6Mpi1JM41VFi2BTjo"
+			]
+		}
+	},
+	"version": 1
+}

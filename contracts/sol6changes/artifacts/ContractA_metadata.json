@@ -1,0 +1,62 @@
+{
+	"compiler": {
+		"version": "0.6.0+commit.26b70077"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "funARequireFailure",
+				"outputs": [],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "funBRevertFailure",
+				"outputs": [],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "funCAssertFailure",
+				"outputs": [],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/sol6changes/TryCatch.sol": "ContractA"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/sol6changes/TryCatch.sol": {
+			"keccak256": "0x53b03fc51c20a47fb9f30fda7ac7d15c22d7bb410d919d50d9d58bd55d59f40f",
+			"urls": [
+				"bzz-raw://e8bae4ea365c07eb252c3199bdb58f43325d88a151a31936033755e96458a1ce",
+				"dweb:/ipfs/QmcRoDwuQwrQoDRfP9PQE7rHtdqs361nx8FDANCKHwKvtw"
+			]
+		}
+	},
+	"version": 1
+}
