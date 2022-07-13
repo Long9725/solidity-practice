@@ -46,7 +46,7 @@ contract MyWallet is Owned {
         deposit(msg.value);
     }
 
-    // fallback () external {
+    fallback () external {
         
-    // }
+    }
 }
