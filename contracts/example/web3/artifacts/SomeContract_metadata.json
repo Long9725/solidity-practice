@@ -1,0 +1,68 @@
+{
+	"compiler": {
+		"version": "0.5.17+commit.d19bba13"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "myUint",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_myUint",
+						"type": "uint256"
+					}
+				],
+				"name": "setUint",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/example/web3/SomeContract.sol": "SomeContract"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/example/web3/SomeContract.sol": {
+			"keccak256": "0xd412c39708c41a28081323ee0faf998dfa0ae34ecbaf6550b712fc3a9829e12b",
+			"urls": [
+				"bzz-raw://f977cf2fd35b00435679aa687d174a7cd38db19e202bcf087cdacc85f065a942",
+				"dweb:/ipfs/QmSzHPyqXEaU2aBBmoSFqpKQQKwBFMGJE5kcAaZcVGzMsQ"
+			]
+		}
+	},
+	"version": 1
+}

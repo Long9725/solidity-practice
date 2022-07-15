@@ -44,6 +44,10 @@
 				"type": "event"
 			},
 			{
+				"stateMutability": "nonpayable",
+				"type": "fallback"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "address",
@@ -139,10 +143,10 @@
 	},
 	"sources": {
 		"contracts/assignment/myWallet/MyWallet.sol": {
-			"keccak256": "0xeb18cf1b80a375a3dc305128b0a2c4eea0842fb0e96d136b2e89a58eabd0ca01",
+			"keccak256": "0x721d6f62e518672645aa410d8700597a910115932bafacae6b0b6f813bb91f97",
 			"urls": [
-				"bzz-raw://a63ac46bf610575d27df2dca1551d92746487c6604ad354eaa5abc0ae87aa97c",
-				"dweb:/ipfs/QmZ6wGVwvDF6xMKHNUwabq7KjY69JpGi7DKbVsRj489GGZ"
+				"bzz-raw://f386c70958a1180948e7cbde30f7f2632fac3fd04005fcaa56492acb7cb80c94",
+				"dweb:/ipfs/QmRiq5xQX5Bx3xCQw1VhmYSpbWLDqMMCJcik67ThDWg3Sx"
 			]
 		},
 		"contracts/assignment/myWallet/Owned.sol": {
